@@ -14,10 +14,12 @@
 
 ### 🎯 Goals of This Journey
 
+- ✅ Rebuild the **math foundations for AI** (linear algebra, calculus, probability) with an engineer's mindset.
 - ✅ Master **Python** and its Data/AI ecosystem (NumPy, Pandas, PyTorch).
 - ✅ Understand the foundations of **Machine Learning** and **Deep Learning**.
 - ✅ Tame **LLMs**: Transformers, prompt engineering, RAG.
 - ✅ Build **autonomous and multi-agent systems** (LangChain, CrewAI, AutoGen).
+- ✅ Master **advanced AI architectures & agentic design patterns** (ReAct, Reflection, Planning, orchestrator–workers, evaluator–optimizer).
 - ✅ Ship a **Capstone project** that fuses Agentic AI with embedded electronics.
 
 ---
@@ -38,11 +40,12 @@
 
 | Domain | Skills | Key Tools |
 |---|---|---|
+| 📐 Math for AI | Linear algebra, calculus, probability & statistics | Steve Brunton (Eigensteve), 3Blue1Brown, Khan Academy |
 | 🐍 Python & Data | Advanced syntax, OOP, data manipulation | Python, NumPy, Pandas, Jupyter |
 | 🤖 ML / DL | Regression, classification, neural networks | Scikit-Learn, PyTorch, TensorFlow |
 | 🗣️ NLP & LLMs | Tokenization, embeddings, Transformers, APIs | Hugging Face, OpenAI API |
 | 🧠 Prompting & RAG | Few-shot, Chain-of-Thought, vector databases | ChromaDB, Pinecone, LangChain |
-| 🕸️ AI Agents | Tools, memory, multi-agent orchestration | LangChain, LangGraph, CrewAI, AutoGen |
+| 🕸️ AI Agents | Tools, memory, orchestration, **agentic architectures & design patterns** | LangChain, LangGraph, CrewAI, AutoGen |
 | 🚢 MLOps / Deployment | Evaluation, monitoring, production readiness | LangSmith, Streamlit, FastAPI, Docker |
 
 > ⏱️ **Recommended pace:** 10–15 h/week — 60% practice, 40% theory. Every month ends with a **hands-on project** to publish on GitHub.
@@ -54,8 +57,19 @@
 ```
 Month 1 ──► Month 2 ──► Month 3 ──► Month 4 ──► Month 5 ──► Month 6
 Python      ML / DL     NLP & LLMs   RAG &       AI Agents    Deployment
-& Data                               Prompting   Multi-Agent  & Capstone 🏆
+& Data                               Prompting   & Patterns   & Capstone 🏆
+└──────── 📐 Math Foundations parallel track (Months 1–3) ────────┘
 ```
+
+---
+
+### 📐 Parallel Track (Months 1–3): Math Foundations, the Engineer's Way
+
+> **2–3 h/week alongside the main program.** No heavy theory — just the math that actually powers ML, taught the way engineers think. Main resource: **[Steve Brunton — @Eigensteve](https://www.youtube.com/@Eigensteve)** 🎓 (University of Washington professor, explains linear algebra, SVD, differential equations and data-driven science with an engineering perspective — ideal for you).
+
+- [ ] **Month 1 — Linear Algebra:** vectors, matrices, matrix multiplication, eigenvalues/eigenvectors, **SVD** (Eigensteve's *Singular Value Decomposition* series + 3Blue1Brown's *Essence of Linear Algebra*).
+- [ ] **Month 2 — Calculus & Optimization:** derivatives, gradients, chain rule (the heart of backpropagation), gradient descent intuition (Eigensteve + 3Blue1Brown's *Essence of Calculus*).
+- [ ] **Month 3 — Probability & Statistics:** distributions, expectation, variance, Bayes' theorem, sampling (StatQuest + Eigensteve's data-driven science videos).
 
 ---
 
@@ -63,7 +77,7 @@ Python      ML / DL     NLP & LLMs   RAG &       AI Agents    Deployment
 
 > **Goal:** convert your C/C++ reflexes into idiomatic Python and handle data like a pro.
 
-**🔍 Focus:** Advanced Python syntax (comprehensions, decorators, error handling), OOP, NumPy, Pandas, visualization (Matplotlib), virtual environments (`venv` / `conda`), Git & GitHub, Jupyter Notebooks.
+**🔍 Focus:** Advanced Python syntax (comprehensions, decorators, error handling), OOP, NumPy, Pandas, visualization (Matplotlib), virtual environments (`venv` / `conda`), Git & GitHub, Jupyter Notebooks. *📐 Math track: linear algebra with Eigensteve.*
 
 - [ ] **Week 1:** Environment setup (Python, VS Code, Git, `venv`) + core syntax and key differences from C/C++.
 - [ ] **Week 2:** OOP in Python (classes, inheritance, dunder methods), modules, exception handling, `type hints`.
@@ -78,7 +92,7 @@ Python      ML / DL     NLP & LLMs   RAG &       AI Agents    Deployment
 
 > **Goal:** understand how a machine learns, and train your first models.
 
-**🔍 Focus:** Linear/logistic regression, classification, decision trees, evaluation metrics (accuracy, precision, recall, F1), overfitting & cross-validation, neural networks (perceptron, backpropagation), Scikit-Learn, introduction to PyTorch (with a glance at TensorFlow/Keras).
+**🔍 Focus:** Linear/logistic regression, classification, decision trees, evaluation metrics (accuracy, precision, recall, F1), overfitting & cross-validation, neural networks (perceptron, backpropagation), Scikit-Learn, introduction to PyTorch (with a glance at TensorFlow/Keras). *📐 Math track: calculus, gradients & optimization with Eigensteve.*
 
 - [ ] **Week 1:** Core ML concepts (supervised/unsupervised), linear and logistic regression with Scikit-Learn.
 - [ ] **Week 2:** Classification (KNN, decision trees, Random Forest), metrics, train/test split, cross-validation.
@@ -119,16 +133,16 @@ Python      ML / DL     NLP & LLMs   RAG &       AI Agents    Deployment
 
 ---
 
-### 🕸️ Month 5: AI Agent Frameworks (LangChain & CrewAI / AutoGen)
+### 🕸️ Month 5: AI Agent Frameworks, Architectures & Design Patterns (LangChain & CrewAI / AutoGen)
 
-> **Goal:** go from a passive chatbot to an agent that **reasons, uses tools, and acts**.
+> **Goal:** go from a passive chatbot to an agent that **reasons, uses tools, and acts** — and learn the **architecture patterns** that make agentic systems reliable.
 
-**🔍 Focus:** Agent concepts (ReAct loop: reason → act → observe), custom **tools** (function calling), agent memory (short/long term), complex chains and graphs with **LangChain / LangGraph**, multi-agent orchestration with **CrewAI** (roles, tasks, crews), and a discovery of **AutoGen**.
+**🔍 Focus:** Agent concepts (ReAct loop: reason → act → observe), custom **tools** (function calling), agent memory (short/long term), complex chains and graphs with **LangChain / LangGraph**, multi-agent orchestration with **CrewAI** (roles, tasks, crews), a discovery of **AutoGen**, and **advanced agentic architectures & design patterns**: the 4 core patterns (**Reflection, Tool Use, Planning, Multi-Agent Collaboration**) + workflow patterns from Anthropic's *Building Effective Agents* (**prompt chaining, routing, parallelization, orchestrator–workers, evaluator–optimizer**).
 
 - [ ] **Week 1:** Anatomy of an agent: OpenAI function calling, building custom tools (calculator, web search, file reading).
-- [ ] **Week 2:** LangChain & LangGraph agents: ReAct loop, memory management, step control.
-- [ ] **Week 3:** CrewAI: defining roles (agents), tasks, sequential vs hierarchical processes — first working crew.
-- [ ] **Week 4:** CrewAI vs AutoGen comparison, multi-agent patterns (researcher + critic + writer) + **project**.
+- [ ] **Week 2:** LangChain & LangGraph agents: ReAct loop, memory management, state graphs, step control.
+- [ ] **Week 3:** Agentic design patterns in practice: Reflection (self-critique), Planning (plan-and-execute), routing, parallelization, orchestrator–workers, evaluator–optimizer — implement each as a mini LangGraph workflow.
+- [ ] **Week 4:** CrewAI (roles, tasks, sequential vs hierarchical processes), CrewAI vs AutoGen comparison, multi-agent collaboration patterns (researcher + critic + writer) + **project**.
 
 **🏗️ End-of-Month Project:** *Autonomous Design Office* — a **CrewAI** multi-agent team that automates the design of a simple electronic circuit: a **Researcher** agent gathers component specs, a **Design Engineer** agent proposes the schematic and calculations (voltage dividers, pull-up resistors…), a **Reviewer** agent checks consistency, and a **Writer** agent produces the final documentation. ⚙️🤝
 
@@ -169,6 +183,8 @@ Example: *"I want to read a DHT22 sensor on pin D4 and publish the temperature o
 | [DeepLearning.AI — ChatGPT Prompt Engineering for Developers](https://www.deeplearning.ai/short-courses/) | Practical prompt engineering (short & free) | 4 |
 | [DeepLearning.AI — LangChain for LLM Application Development](https://www.deeplearning.ai/short-courses/) | Chains, memory, agents | 4–5 |
 | [DeepLearning.AI — Multi AI Agent Systems with CrewAI](https://www.deeplearning.ai/short-courses/) | Multi-agent systems taught by CrewAI's creator | 5 |
+| [DeepLearning.AI — AI Agentic Design Patterns with AutoGen](https://www.deeplearning.ai/short-courses/) | Reflection, Tool Use, Planning & Multi-Agent patterns hands-on | 5 |
+| [Anthropic — Building Effective Agents](https://www.anthropic.com/research/building-effective-agents) | Reference architectures & workflow patterns for production agents | 5–6 |
 | [Official LangChain / CrewAI / ChromaDB Docs](https://python.langchain.com) | The reference to keep open at all times | 4–6 |
 
 ### 📖 Books
@@ -179,7 +195,8 @@ Example: *"I want to read a DHT22 sensor on pin D4 and publish the temperature o
 
 ### 📺 Key YouTube Channels
 
-- 🎥 **3Blue1Brown** — visual intuition for neural networks and Transformers (*Neural Networks* series).
+- 🎥 **[Steve Brunton — @Eigensteve](https://www.youtube.com/@Eigensteve)** — 📐 the math backbone of this program: linear algebra, SVD, calculus, control theory and data-driven science, taught with an engineering mindset (perfect fit for an electronics engineer).
+- 🎥 **3Blue1Brown** — visual intuition for linear algebra, calculus, neural networks and Transformers (*Essence of Linear Algebra*, *Neural Networks* series).
 - 🎥 **Andrej Karpathy** — *"Neural Networks: Zero to Hero"* and *"Intro to LLMs"*: free masterclasses.
 - 🎥 **StatQuest (Josh Starmer)** — statistics and ML concepts explained simply.
 - 🎥 **freeCodeCamp** — long-form practical tutorials (Python, PyTorch, LangChain).
@@ -196,7 +213,7 @@ Example: *"I want to read a DHT22 sensor on pin D4 and publish the temperature o
 | 2️⃣ | 🤖 Machine Learning & Deep Learning | Predictive Maintenance Model | ⬜ |
 | 3️⃣ | 🗣️ NLP & LLM Foundations | Classifier / API Chatbot | ⬜ |
 | 4️⃣ | 🧠 Prompt Engineering & RAG | Datasheet Assistant (PDF RAG) | ⬜ |
-| 5️⃣ | 🕸️ AI Agents & Multi-Agent Systems | CrewAI Design Office | ⬜ |
+| 5️⃣ | 🕸️ AI Agents, Architectures & Design Patterns | CrewAI Design Office | ⬜ |
 | 6️⃣ | 🚢 Deployment & Capstone | 🏆 EmbedAI Copilot (Arduino/STM32) | ⬜ |
 
 *(Replace ⬜ with ✅ as you complete each month!)*
@@ -206,8 +223,9 @@ Example: *"I want to read a DHT22 sensor on pin D4 and publish the temperature o
 - [ ] **Month 1 done** — Python mastered, sensor project published on GitHub
 - [ ] **Month 2 done** — First ML/DL model trained and evaluated
 - [ ] **Month 3 done** — Transformers understood, first LLM app working
+- [ ] **📐 Math track done (Months 1–3)** — linear algebra, calculus & probability refreshed with Eigensteve
 - [ ] **Month 4 done** — RAG system running on real datasheets
-- [ ] **Month 5 done** — Autonomous multi-agent crew demonstrated on video
+- [ ] **Month 5 done** — Agentic design patterns implemented + autonomous multi-agent crew demonstrated on video
 - [ ] **Month 6 done** — 🏆 Capstone deployed + GitHub portfolio updated + LinkedIn profile refreshed
 
 ---
