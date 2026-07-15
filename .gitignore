@@ -1,0 +1,44 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.venv/
+venv/
+.python-version
+
+# Tooling caches
+.mypy_cache/
+.ruff_cache/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Secrets & environment — never commit credentials (§13)
+.env
+.env.*
+!.env.example
+
+# Data & artifacts
+*.ckpt
+*.pt
+*.onnx
+chroma/
+*.sqlite3
+mlruns/
+
+# ML experiment outputs
+wandb/
+lightning_logs/
+
+# OS / editor
+.DS_Store
+.vscode/
+.idea/
+
+# PlatformIO (capstone sandbox)
+.pio/
