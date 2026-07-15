@@ -2,6 +2,7 @@
 
 **From Embedded Systems Engineering to Autonomous LLM Systems**
 
+[![CI](https://github.com/khlaifiabilel/electronic-to-agentic-ai/actions/workflows/ci.yml/badge.svg)](https://github.com/khlaifiabilel/electronic-to-agentic-ai/actions/workflows/ci.yml)
 ![Python](https://img.shields.io/badge/Python-3.11%2B-3776AB?logo=python&logoColor=white)
 ![PyTorch](https://img.shields.io/badge/PyTorch-2.x-EE4C2C?logo=pytorch&logoColor=white)
 ![LangGraph](https://img.shields.io/badge/LangChain%20%2F%20LangGraph-latest-1C3C3C?logo=langchain&logoColor=white)
