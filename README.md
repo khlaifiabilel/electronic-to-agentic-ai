@@ -43,6 +43,7 @@ This repository defines a rigorous, engineering-grade curriculum for transitioni
 14. [Repository Layout](#14-repository-layout)
 15. [Progress Tracking](#15-progress-tracking)
 16. [References](#16-references)
+17. [License](#17-license)
 
 ---
 
@@ -421,7 +422,7 @@ flowchart TD
 
 ## 13. Engineering Standards
 
-Applied from Module 1 onward; enforced by pre-commit and CI.
+These are program targets. CI currently enforces the applicable lint, format, typing, test, and coverage checks for the implemented `sensor-analyzer` project; the later-module standards become enforceable as those projects are implemented.
 
 | Concern | Standard |
 |---|---|
@@ -457,11 +458,13 @@ Applied from Module 1 onward; enforced by pre-commit and CI.
 
 ## 15. Progress Tracking
 
+The curriculum is primarily a specification and roadmap. The implemented code currently consists of the Module 1 `sensor-analyzer` project skeleton, a typed and tested `rolling_zscore` primitive, locked development tooling, and CI discovery/quality checks. Module 1 requirements FR-1 through FR-4 and its CLI remain incomplete; Modules 2 through 6 and the mathematics track contain planning READMEs only.
+
 ### 15.1 Module status
 
 | Module | Scope | Deliverable | Exit criterion | Status |
 |:---:|---|---|---|:---:|
-| M1 | Scientific Python & engineering baseline | `sensor-analyzer` | Coverage ≥ 80%, 1M rows < 10 s | ⬜ |
+| M1 | Scientific Python & engineering baseline | `sensor-analyzer` | Coverage ≥ 80%, 1M rows < 10 s | In progress: skeleton + `rolling_zscore` |
 | M2 | ML/DL & evaluation rigor | `predictive-maintenance` | Beats baseline with documented CI | ⬜ |
 | M3 | Transformer internals & fine-tuning | `component-support-nlp` | Macro-F1 target + 100% schema validity | ⬜ |
 | M4 | Prompting & RAG | `datasheet-rag` | Faithfulness ≥ 0.85, 0 fabricated citations | ⬜ |
@@ -526,3 +529,7 @@ Applied from Module 1 onward; enforced by pre-commit and CI.
 ---
 
 *Maintained as a living document: each module's actual results (metrics, ablations, post-mortems) are appended to its directory README upon completion.*
+
+## 17. License
+
+No license file is currently included. Public availability does not grant permission to copy, modify, or redistribute the repository contents; add an explicit license before treating the curriculum or code as reusable.
