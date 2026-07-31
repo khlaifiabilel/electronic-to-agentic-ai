@@ -532,4 +532,4 @@ The curriculum is primarily a specification and roadmap. The implemented code cu
 
 ## 17. License
 
-No license file is currently included. Public availability does not grant permission to copy, modify, or redistribute the repository contents; add an explicit license before treating the curriculum or code as reusable.
+This curriculum and the repository's original code are available under the [MIT License](LICENSE). Referenced papers, books, datasets, models, frameworks, and other third-party resources retain their respective terms.
